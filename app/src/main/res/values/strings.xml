@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">CabifyShopAppTest</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">CabifyShop - AppTest</string>
+    <string name="action_settings">Carrinho</string>
 </resources>

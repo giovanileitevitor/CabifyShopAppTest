@@ -1,9 +1,13 @@
 # CabifyShopAppTest
 App demo - CabifyTest
-
 Project designed for CabifyApplication Testing.
 
-Main ideia - app with 5 screens
+Structure (Packages) :
+- Room
+- View
+- Navigation
+
+Screen Names and details:
 - Splash Screen
 - Main Screen (Tela Prinicipal)
 - Shop Screen (Tela de compras)

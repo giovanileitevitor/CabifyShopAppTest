@@ -23,7 +23,7 @@
         </activity>
 
         <activity
-            android:name=".view.MainActivity"
+            android:name=".view.LoginActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
 

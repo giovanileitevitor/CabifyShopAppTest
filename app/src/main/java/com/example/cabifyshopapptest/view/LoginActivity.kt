@@ -7,19 +7,15 @@ import android.view.MenuItem
 import com.example.cabifyshopapptest.R
 import com.google.android.material.snackbar.Snackbar
 
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_login.*
 
-class MainActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_login)
 
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Chamar Tela de Compras", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
     }
 
 

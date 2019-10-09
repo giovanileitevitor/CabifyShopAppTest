@@ -6,8 +6,9 @@
 
     <color name="brancoGelo">#E8E9F4</color>
 
-    <color name="corIconLogin">#885ead</color>
+    <color name="corIconLogin">#885eF0</color>
     <color name="corTextLogin">#885ead</color>
-    <color name="corCheckBoxVazio">#885ead</color>
+    <color name="corCheckBoxVazio">#885eF0</color>
     <color name="corButton">#885eF0</color>
+    <color name="corBordaLoginBox">#885eF0</color>
 </resources>

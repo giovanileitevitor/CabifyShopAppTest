@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,89 +9,165 @@
     tools:context=".view.LoginActivity"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imgLoog"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/cabify_logo"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <ImageView
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:src="@drawable/ic_account_24dp"
-            android:layout_weight="0.25"/>
-
-        <EditText
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:id="@+id/edt_userName"
-            android:hint="Nome de Acesso"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/corTextLogin"
-            android:textColorHint="@android:color/darker_gray"
-            android:textAlignment="center"
-            android:backgroundTint="@color/corTextLogin"
-            android:maxLines="1"
-            android:inputType="text"
-            android:maxLength="20"
-            android:gravity="center"
-            android:layout_gravity="center"/>
+            android:id="@+id/imgLoog"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cabify_logo"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="120dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp">
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_border_login">
 
-        <CheckBox
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:id="@+id/chbox_salvar"
-            android:buttonTint="@color/corCheckBoxVazio"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
 
-        <TextView
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_account_24dp"
+                android:layout_weight="0.25"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.75"
+                android:id="@+id/edt_userName"
+                android:hint="Nome de Acesso"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/corTextLogin"
+                android:textColorHint="@android:color/darker_gray"
+                android:textAlignment="center"
+                android:backgroundTint="@color/corTextLogin"
+                android:maxLines="1"
+                android:inputType="text"
+                android:maxLength="20"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_lock_24dp"
+                android:layout_weight="0.25"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.75"
+                android:id="@+id/edt_passWord"
+                android:hint="* * * * * * * * * * * *"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/corTextLogin"
+                android:textColorHint="@android:color/darker_gray"
+                android:textAlignment="center"
+                android:backgroundTint="@color/corTextLogin"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="14sp"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:textColor="@color/corTextLogin"
-            android:text="Salvar credencial"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chbox_salvar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:buttonTint="@color/corCheckBoxVazio" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Salvar credenciais de acesso"
+                android:textColor="@color/corTextLogin"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="10sp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:textColor="@color/corTextLogin"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_corner_button"
+            android:orientation="horizontal"
+            android:elevation="4dp"
+            android:id="@+id/btn_prosseguir">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:textSize="20sp"
+                android:text="Prosseguir"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/corButton"/>
+
+           <ImageView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="0.40"
+               android:src="@drawable/ic_arrow_forward"
+               android:layout_gravity="center"
+               android:textAlignment="center"/>
+
+        </LinearLayout>
 
     </LinearLayout>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="PROSSEGUIR"
-        android:textSize="30sp"
-        android:layout_marginTop="150dp"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:background="@color/corButton"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:id="@+id/btn_prosseguir"/>
-
-
-
-
-
 
 </LinearLayout>

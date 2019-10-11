@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_margin="5dp"
         android:background="@drawable/rounded_border_login">
@@ -18,7 +18,7 @@
             android:id="@+id/txtCarrinho"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Carrinho ..."
+            android:text=" "
             android:gravity="center_vertical|center_horizontal"/>
 
     </LinearLayout>

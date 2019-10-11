@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNavigation : BottomNavigationView = findViewById(R.id.navigationView)
         bottomNavigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-        val homeFragment = HomeFragment.newInstance()
+        val homeFragment = HomeFragment()
         openFragment(homeFragment)
 
     }
@@ -32,19 +32,19 @@ class MainActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.navigation_home -> {
                 toolbar.title = "Início"
-                val homeFragment = HomeFragment.newInstance()
+                val homeFragment = HomeFragment()
                 openFragment(homeFragment)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_carrinho -> {
                 toolbar.title = "Meus pedidos"
-                val carrinhoFragment = CarrinhoFragment.newInstance()
+                val carrinhoFragment = CarrinhoFragment()
                 openFragment(carrinhoFragment)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_finalizar -> {
                 toolbar.title = "Pagamento"
-                val finalizarFragment = FinalizarFragment.newInstance()
+                val finalizarFragment = FinalizarFragment()
                 openFragment(finalizarFragment)
                 return@OnNavigationItemSelectedListener true
             }

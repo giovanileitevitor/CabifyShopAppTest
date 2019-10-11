@@ -9,10 +9,26 @@ import com.example.cabifyshopapptest.R
 
 class CarrinhoFragment : Fragment() {
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
-        inflater.inflate(R.layout.fragment_carrinho, container, false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
-    companion object {
-        fun newInstance(): CarrinhoFragment = CarrinhoFragment()
+        return inflater.inflate(R.layout.fragment_carrinho, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        init()
+    }
+
+    private fun init() {
+        initVars()
+        initActions()
+    }
+
+    private fun initVars(){
+
+    }
+
+    private fun initActions(){
+
     }
 }

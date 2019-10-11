@@ -2,6 +2,14 @@
 App demo - CabifyTest
 Project designed for CabifyApplication Testing.
 
+Libs do JetPack utilizadas:
+// Material
+implementation "com.google.android.material:material:$material_version"
+
+// Navigation
+implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
 
 Screen Names and details:
 - Splash Screen (Tela de abertura)
@@ -14,15 +22,11 @@ Screen Names and details:
 Images:
 Tela Inicial
 
-
 Tela de Login
-
 
 Tela Inicial
 
-
 Tela de Carrinho de Compras
-
 
 Tela de Pagamento
 

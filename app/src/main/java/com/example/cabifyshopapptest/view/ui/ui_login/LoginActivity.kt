@@ -1,4 +1,4 @@
-package com.example.cabifyshopapptest.view.ui_login
+package com.example.cabifyshopapptest.view.ui.ui_login
 
 import android.content.Context
 import android.content.Intent

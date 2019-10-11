@@ -5,9 +5,9 @@ import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.cabifyshopapptest.R
-import com.example.cabifyshopapptest.view.ui_carrinho.CarrinhoFragment
-import com.example.cabifyshopapptest.view.ui_finalizar.FinalizarFragment
-import com.example.cabifyshopapptest.view.ui_home.HomeFragment
+import com.example.cabifyshopapptest.view.ui.ui_carrinho.CarrinhoFragment
+import com.example.cabifyshopapptest.view.ui.ui_finalizar.FinalizarFragment
+import com.example.cabifyshopapptest.view.ui.ui_home.HomeFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNavigation : BottomNavigationView = findViewById(R.id.navigationView)
         bottomNavigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+        val homeFragment = HomeFragment.newInstance()
+        openFragment(homeFragment)
 
     }
 

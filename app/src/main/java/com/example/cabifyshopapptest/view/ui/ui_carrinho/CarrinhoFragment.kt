@@ -1,4 +1,4 @@
-package com.example.cabifyshopapptest.view.ui_carrinho
+package com.example.cabifyshopapptest.view.ui.ui_carrinho
 
 import android.os.Bundle
 import android.view.LayoutInflater

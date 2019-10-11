@@ -7,19 +7,25 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.cabifyshopapptest.view.HomeFragment"
+        android:name="com.example.cabifyshopapptest.view.ui_home.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_home" />
 
-<!--    <fragment-->
-<!--        android:id="@+id/navigation_dashboard"-->
-<!--        android:name="com.example.bottomnavigation.ui.dashboard.DashboardFragment"-->
-<!--        android:label="@string/title_dashboard"-->
-<!--        tools:layout="@layout/fragment_dashboard" />-->
+    <fragment
+        android:id="@+id/navigation_carrinho"
+        android:name="com.example.cabifyshopapptest.view.ui_carrinho.CarrinhoFragment"
+        android:label="Carrinho de Compras"
+        tools:layout="@layout/fragment_carrinho" />
 
-<!--    <fragment-->
-<!--        android:id="@+id/navigation_notifications"-->
-<!--        android:name="com.example.bottomnavigation.ui.notifications.NotificationsFragment"-->
-<!--        android:label="@string/title_notifications"-->
-<!--        tools:layout="@layout/fragment_notifications" />-->
+    <fragment
+        android:id="@+id/navigation_finalizar"
+        android:name="com.example.cabifyshopapptest.view.ui_finalizar.FinalizarFragment"
+        android:label="Pagamento"
+        tools:layout="@layout/fragment_finalizar" />
+
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.example.cabifyshopapptest.view.ui_chat.ChatFragment"
+        android:label="Fale Conosco"
+        tools:layout="@layout/fragment_chat" />
 </navigation>

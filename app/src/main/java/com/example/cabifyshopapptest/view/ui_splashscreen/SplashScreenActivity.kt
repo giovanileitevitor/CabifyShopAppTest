@@ -1,4 +1,4 @@
-package com.example.cabifyshopapptest.view
+package com.example.cabifyshopapptest.view.ui_splashscreen
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
 import com.example.cabifyshopapptest.R
+import com.example.cabifyshopapptest.view.ui_login.LoginActivity
 import kotlinx.android.synthetic.main.activity_splash_screen.*
 
 class SplashScreenActivity : AppCompatActivity() {

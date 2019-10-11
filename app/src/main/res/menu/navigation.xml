@@ -16,9 +16,4 @@
         android:icon="@drawable/ic_finalizar_24dp"
         android:title="Finalizar"/>
 
-    <item
-        android:id="@+id/navigation_chat"
-        android:icon="@drawable/ic_chat_24dp"
-        android:title="Chat"/>
-
 </menu>
